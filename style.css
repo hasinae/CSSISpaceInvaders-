@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  border: thick solid #D2AFE5;
+}
+default {
+  font-family: 'Ariel'
+  
+}
+.buttons {
+	background-color: #D2AFE5;
+  border-radius: 16px;
+  border:thin solid #D2AFE5;
+	display:inline-block;
+  font-family: 'Tourney', cursive;
+	cursor:pointer;
+	color: #FFF;
+  cursor: pointer;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+  margin: 5px;
+	text-shadow:1px 1px 0px #b86381;
+  transition: all 0.5s;
+}
+
+.buttons:hover {background-color: #FFBAE9}
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttons span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttons:hover span {
+  padding-right: 25px;
+}
+
+.buttons:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sliders {
+  height: 20px;
+  width: 130px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-appearance: none;  
+}
+.sliders::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #787878;
+  cursor: pointer;
+}
+
